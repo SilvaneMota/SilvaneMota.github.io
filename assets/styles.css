@@ -1,0 +1,8 @@
+ /* Efeito de zoom leve nas imagens ao passar o mouse */
+ .project-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* Aumenta 5% o tamanho da imagem ao passar o mouse */
+}
