@@ -4,106 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Power BI</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-     <!-- Styles.css -->
-     <link rel="stylesheet" href="./assets/styles.css">
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="./assets/styles.css">
+    <!-- Estilo em Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
-<body class="bg-gray-100 text-gray-800">
+    <body class="bg-gray-100 text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto text-center">
-            <h1 class="text-3xl font-bold">Silvane Mota</h1>
-            <h3 class="text-1xl font-bold">Bem-vindo (a) ao meu Portfólio de Projetos no Power BI.</h3>
-            <nav class="mt-4">
-                <ul class="flex justify-center space-x-8">
-                    <li><a href="#sobre" class="hover:underline">Sobre</a></li>
-                    <li><a href="#projetos" class="hover:underline">Projetos</a></li>
-                    <li><a href="#contato" class="hover:underline">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Seção Sobre -->
-    <section id="sobre" class="py-12 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-4">Sobre Mim</h2>
-            <p class="text-lg max-w-3xl mx-auto">Sou especialista em Power BI, com ampla experiência na criação de dashboards interativos e análise de dados. Minha paixão é transformar dados em insights visuais e fornecer soluções de inteligência empresarial para ajudar na tomada de decisões.</p>
-        </div>
-    </section>
-
-    <!-- Seção Projetos -->
-    <section id="projetos" class="py-12">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-8">Meus Projetos</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Projeto 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <a 
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZDhmZTAxM2YtYzZlMi00YzVlLTg2MWEtZTkyNTAxMjJjNTRkIiwidCI6IjgzODY4OWRiLWIxN2ItNGU2ZS1iZTIyLWZlYzQ5YmQ5NzY5YSJ9&pageName=adc2d7c4332525bc72d8" 
-                        class="text-3xl font-bold mb-2">
-                        <img src="./assets/img/analise_de_dados_sistema_do_consorcio.png" alt="Dashboard Consórcio" class="rounded-md mb-4 project-image">
-                        Dashboard Consórcio
-                    </a>
-                    <p>Termômetro do sistema de consórcio.</p>
-                </div>
-
-                <!-- Projeto 2 -->
-                <!-- <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="" alt="" class="rounded-md mb-4">
-                    <a 
-                        href="" 
-                        class="hover:underline text-3xl font-bold mb-2">
-                        Projeto 2
-                    </a>
-                    <p>Descrição do projeto 2.</p>
-                </div> -->
-
-                <!-- Projeto 3 -->
-                <!-- <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="" alt="" class="rounded-md mb-4">
-                    <a 
-                        href="" 
-                        class="hover:underline text-3xl font-bold mb-2">
-                        Projeto 3
-                    </a>
-                    <p>Descrição do projeto 3.</p>
-                </div> -->
-
-                <!-- Projeto 4 -->
-                <!-- <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="" alt="" class="rounded-md mb-4">
-                    <a 
-                        href="" 
-                        class="hover:underline text-3xl font-bold mb-2">
-                        Projeto 4
-                    </a>
-                    <p>Descrição do projeto 4.</p>
-                </div> -->
-
+        <!-- Header -->
+        <header class="bg-custom text-black py-4">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl font-bold">Silvane Mota</h1>
+                <h3 class="text-xl font-bold">Bem-vindo (a) ao meu Portfólio de Projetos no Power BI.</h3>
+                <nav class="mt-4">
+                    <ul class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                        <li><a href="#projetos" class="border p-2 flex justify-center items-center w-full">Projetos</a></li>
+                        <li><a href="#contato" class="border p-2 flex justify-center items-center w-full">Contato</a></li>
+                        <li><a href="#sobre" class="border p-2 flex justify-center items-center w-full">Sobre Mim</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </section>
+        </header>
+        
+        <!-- Header 2 -->
+        <section class="header2-custom bg-blue-600 py-44">
+            <div class="container mx-auto text-center">
+                <h1 class="text-white text-5xl md:text-6xl font-bold mb-4">Por que sua empresa precisa de Business Intelligence?</h1>
+                <p class="text-white text-lg md:text-xl max-w-3xl mx-auto">
+                    Um dos maiores desafios das organizações é não ter informações atualizadas e de fácil visualização para tomar decisões ágeis e assertivas que podem gerar economias, aumento de receita, entre diversos outros benefícios.
+                    Como profissional, meu objetivo é transformar dados brutos em informações compreensíveis e significativas que orientam a tomada de decisão, através do Power BI.
+                    (Fonte: Leonardo Karpinski)
+                </p>
+            </div>
+        </section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="py-12 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-4">Contato</h2>
-            <p class="text-lg mb-4">Interessado em colaborar? Entre em contato!</p>
-            <p>Email: <a href="mailto:seuemail@exemplo.com" class="text-blue-600 hover:underline">seuemail@exemplo.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/seuperfil" class="text-blue-600 hover:underline">linkedin.com/in/seuperfil</a></p>
-        </div>
-    </section>
+        <!-- Seção Informações -->
+        <section id="informacoes">
+            <div class="">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- Primeiro Slide -->
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 blurred-image" src="./assets/img/image_1.png" alt="Primeiro Slide">
+                            <div class="carousel-caption d-flex flex-column justify-center align-items-center h-full text-center">
+                                <h1 class="text-white text-7xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">Título</h1>
+                                <p class="text-white text-3xl bg-black bg-opacity-50 p-2 rounded-lg">Texto</p>
+                            </div>
+                        </div>
+                        <!-- Segundo Slide -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100 blurred-image" src="./assets/img/image_2.png" alt="Segundo Slide">
+                            <div class="carousel-caption d-flex flex-column justify-center align-items-center h-full text-center">
+                                <h1 class="text-white text-7xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">Título</h1>
+                                <p class="text-white text-3xl bg-black bg-opacity-50 p-2 rounded-lg">Texto</p>
+                            </div>
+                        </div>
+                        <!-- Terceiro Slide -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100 blurred-image" src="./assets/img/image_3.png" alt="Terceiro Slide">
+                            <div class="carousel-caption d-flex flex-column justify-center align-items-center h-full text-center">
+                                <h1 class="text-white text-7xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">Título</h1>
+                                <p class="text-white text-3xl bg-black bg-opacity-50 p-2 rounded-lg">Texto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
 
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 Meu Portfólio de Power BI. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+        <!-- Seção Projetos -->
+        <section id="projetos" class="py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-8">Meus Projetos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-</body>
+                    <!-- Projeto 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <a 
+                            href="https://app.powerbi.com/view?r=eyJrIjoiZDhmZTAxM2YtYzZlMi00YzVlLTg2MWEtZTkyNTAxMjJjNTRkIiwidCI6IjgzODY4OWRiLWIxN2ItNGU2ZS1iZTIyLWZlYzQ5YmQ5NzY5YSJ9&pageName=adc2d7c4332525bc72d8" 
+                            class="text-3xl font-bold mb-2">
+                            <img src="./assets/img/analise_de_dados_sistema_do_consorcio.png" alt="Dashboard Consórcio" class="rounded-md mb-4 project-image">
+                            Dashboard Consórcio
+                        </a>
+                        <p>Termômetro do sistema de consórcio.</p>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <!-- <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="" alt="" class="rounded-md mb-4">
+                        <a 
+                            href="" 
+                            class="hover:underline text-3xl font-bold mb-2">
+                            Projeto 2
+                        </a>
+                        <p>Descrição do projeto 2.</p>
+                    </div> -->
+
+                    <!-- Projeto 3 -->
+                    <!-- <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="" alt="" class="rounded-md mb-4">
+                        <a 
+                            href="" 
+                            class="hover:underline text-3xl font-bold mb-2">
+                            Projeto 3
+                        </a>
+                        <p>Descrição do projeto 3.</p>
+                    </div> -->
+
+                    <!-- Projeto 4 -->
+                    <!-- <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="" alt="" class="rounded-md mb-4">
+                        <a 
+                            href="" 
+                            class="hover:underline text-3xl font-bold mb-2">
+                            Projeto 4
+                        </a>
+                        <p>Descrição do projeto 4.</p>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="py-12 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-4">Sobre Mim</h2>
+                <p class="text-lg max-w-3xl mx-auto">Sou especialista em Power BI, com ampla experiência na criação de dashboards interativos e análise de dados. Minha paixão é transformar dados em insights visuais e fornecer soluções de inteligência empresarial para ajudar na tomada de decisões.</p>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="py-12 bg-white">
+            <div class="container mx-auto text-center">
+                <p class="text-lg mb-4">Vamos conversar? Entre em contato!</p>
+                <p>Email: <a href="mailto:silvanemota@outlook.com" class="text-blue-600 hover:underline">silvanemota@outlook.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/silvanemota/" class="text-blue-600 hover:underline">https://www.linkedin.com/in/silvanemota/</a></p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-custom text-white py-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 Meu Portfólio de Power BI. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>
